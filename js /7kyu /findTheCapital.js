@@ -32,7 +32,7 @@
 // FINAL CODE WARS SOLUTION 
 
 var capitals = function (word) {
-    return new Array(...word).map((element, index) => (element === element
+    return [...word].map((element, index) => (element === element
     .toUpperCase() ? index : null))
     .filter(index => index !== null)
 };
