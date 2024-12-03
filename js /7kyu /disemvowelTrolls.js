@@ -11,6 +11,6 @@
 // 1. Loop through the String
 // 2. filter out the characters 
 
-function disemvowel(str) {
-    return str;
-  }
+const disemvowel = str => str.replace(/[aeiou]/gi, "");
+
+console.log(disemvowel('Hello World My namE is TomIsIn and i lOve to cOde'))
