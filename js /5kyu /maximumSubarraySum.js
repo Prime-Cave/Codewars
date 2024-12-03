@@ -15,8 +15,6 @@
 // 4. loop through the new array or sub arrays and add the values in the sub arays generating a new array of sub array values
 // find the highest number in the new array of sub array sum
 
-
-
 const generateSubarrays = array =>{
     var subarray = []
     for (let x = 0; x < array.length; x++){
