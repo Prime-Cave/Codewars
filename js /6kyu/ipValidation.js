@@ -11,6 +11,8 @@
 // Notes:
 // Leading zeros (e.g. 01.02.03.04) are considered invalid
 // Inputs are guaranteed to be a single string
+
+
 // Objective 
 // 1. check if the string is a valid IPv4
 // 2. numbers with leading 0s are considered invalid 
@@ -29,8 +31,6 @@ function isValidIP(str) {
    }
     for (let x =0; x < strArray.length; x++){
         let octet = strArray[x]
-            
-
             if(!/^\d+$/.test(octet) ||(octet.length > 1 && octet.startsWith('0'))){
                 return false 
             }
