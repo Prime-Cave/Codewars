@@ -43,7 +43,9 @@ var maxSequence = function(arr){
     for (let x = 0; x < newSubArray.length; x++){
         arrayOfSums.push(newSubArray[x].reduce((accumulator, currentValue) => accumulator + currentValue, 0))
     }
+    
     const maxSum = Math.max(...arrayOfSums)
-    return maxSum 
+    return maxSum
+   // return newSubArray.filter(element => element.length == 8)
 }
-console.log(maxSequence([-1,-2,-3,-4,-5,-6]))
+console.log(maxSequence([1,5,0,9,2,0,0,5]))

@@ -36,4 +36,4 @@ var capitals = function (word) {
     .toUpperCase() ? index : null))
     .filter(index => index !== null)
 };
-console.log(capitals('khIDSOFHlkHfsDkGh'))
+console.log(capitals('tomisinLikesToThinkHeisBATMan'))
