@@ -17,14 +17,26 @@
 // 5. Then add it to the addition 
 // 6. Compare if the addition value is ===  to initial Param
 
-function narcissistic(value) {
+(function narcissistic(value=0) {
     const numberOfDigits = `${value}`.length
     const arrayOfValues = Array.from(`${value}`,Number)
-    var addingValues = 0
+    let addingValues = 0
     for(let x = 0; x < arrayOfValues.length; x++ ){
         addingValues += arrayOfValues[x] ** numberOfDigits
     }
-    return addingValues === value ? true : false
-}
+    //return addingValues === value //? true : false
+    console.log(addingValues===value);
+    
+})()
+// let stuff = "wow"
+// const functionsArgument = ( stuff) => {
+//     return stuff = 'hello' // this creates a shallow copy
+// }
+// console.log(functionsArgument(stuff));
+// console.log(stuff);
 
-console.log(narcissistic(153))
+//Immediately Invoked function expression 
+// (() => {
+//     let secretMessage = "Hello i am your secret"
+//     console.log(secretMessage)
+// })()

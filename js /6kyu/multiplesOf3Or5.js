@@ -18,18 +18,19 @@
 // 8. repeat loop until complete
 
 function solution(number){
-  var sum = 0 
-    if(number < 0) return 0;
-        for(let x = 1; x < number; x++){
-            if(x%3 === 0 || x%5 === 0){
-                sum += x
-            } else if (x%3 === 0){
-                sum += x
-            } else if (x%5 === 0){
-                sum += x
-            }
-        }
-    return sum 
-}
+    let sum = 0 
+      if(number < 0) 0;
+  
+          for(let x = 1; x < number; x++){
+              if(x%3 === 0 && x%5 === 0){
+                  sum += x
+              } else if (x%3 === 0 || x%5 === 0){
+                  sum += x
+              } 
+          }
+      return sum 
+  }
+  
+  console.log(solution(40))
 
 console.log(solution(40))

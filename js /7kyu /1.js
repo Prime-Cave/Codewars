@@ -10,7 +10,7 @@
 // Objectives
 // 2. Return in Decending order. 
 
-const descendingOrder =  n =>  Number.parseInt(new Array(...n.toString())
+const descendingOrder =  n =>  Number.parseInt([...n.toString()]
 .sort((a,b) => b-a)
 .join('')) 
 

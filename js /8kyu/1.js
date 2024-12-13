@@ -10,7 +10,7 @@ function mergeArrays(arr1, arr2) {
     const merged = arr1.concat(arr2);
 
     // Sort in ascending order and remove duplicates
-    return [...new Set(merged.sort((a, b) => a - b))];
+    return [...new Set(merged.sort((a, b) => a -b ))];
 }
 
   console.log(mergeArrays([1,2,3,4], [1,2,3,4,5,6,7,8,10, 20, 30, 40]))

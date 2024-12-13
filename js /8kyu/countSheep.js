@@ -18,7 +18,7 @@
 //4. check if the value in the array is true, if yes add one to the count
 
 function countSheeps(sheep) {
-    var count = 0
+    let count = 0
     for(let x = 0; x<sheep.length; x++){
         sheep[x] ? count ++ : null
     }
