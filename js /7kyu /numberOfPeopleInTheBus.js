@@ -21,4 +21,8 @@ var number = function(busStops){
     return peopleInBus -peopleOutofBus
 }
 
-console.log(number([[10,0],[3,5],[5,8]]));
+
+// Refactor 
+const number = busStops =>  busStops.reduce((remain, [on, off]) => remain + on - off, 0)
+
+console.log(number([[10,0],[10,8],[0,7]]));
