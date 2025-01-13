@@ -9,19 +9,11 @@ function comp(array1, array2) {
   let squaredArr = array1.map((num) => num * num);
 
   for (num of squaredArr) {
-    if (array2.includes(num)) {
-      count++;
-    } else {
-      return false;
-    }
+    if (!array2.includes(num)) false
   }
 
   for (num of array2) {
-    if (squaredArr.includes(num)) {
-      count++;
-    } else {
-      return false;
-    }
+    if (!squaredArr.includes(num)) false; 
   }
   // Check for Mulitplicity
   // Count the Array
