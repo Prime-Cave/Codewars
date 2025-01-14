@@ -5,20 +5,17 @@ function comp(array1, array2) {
   if (array1 == null || array2 == null) {
     return false;
   }
-
   let squaredArr = array1.map((num) => num * num);
 
   for (num of squaredArr) {
     if (!array2.includes(num)) false
   }
-
   for (num of array2) {
     if (!squaredArr.includes(num)) false; 
   }
   // Check for Mulitplicity
   // Count the Array
   const countSquaredArr = {};
-
   for (x = 0; x < squaredArr.length; x++) {
     if (!countSquaredArr.hasOwnProperty(squaredArr[x])) {
       countSquaredArr[squaredArr[x]] = 1;
@@ -41,7 +38,6 @@ function comp(array1, array2) {
       return false;
     }
   }
-
   return true;
 }
 
