@@ -10,7 +10,24 @@
 // "aA11" -> 2 # 'a' and '1'
 // "ABBA" -> 2 # 'A' and 'B' each occur twice
 
-function duplicateCount(text){
-    
-    
+function duplicateCount(text) {
+  if (text === "" || text === undefined) {
+    return 0;
   }
+  let count = {};
+  for (x = 0; x < text.length; x++) {
+    let lower = text[x].toLowerCase();
+    count[lower] = (count[lower] || 0) + 1;
+  }
+  let duplicates = 0;
+
+  for (key in count) {
+    if (count[key] > 1) {
+      duplicates++;
+    }
+  }
+  return duplicates;
+}
+
+console.log(duplicateCount("bBaAcCde"));
+//console.log();
