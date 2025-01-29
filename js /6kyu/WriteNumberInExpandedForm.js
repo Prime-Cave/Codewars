@@ -13,3 +13,15 @@ function expandedForm(num) {
 
 //console.log(expandedForm(12)); // should return '10 + 2'
 console.log(expandedForm(70304)); 
+
+// Co-Pilot Implementation
+function expandedForm(num) {
+    return num
+        .toString()
+        .split('')
+        .reverse()
+        .map((digit, index) => digit * Math.pow(10, index))
+        .filter(val => val > 0)
+        .reverse()
+        .join(' + ');
+}
