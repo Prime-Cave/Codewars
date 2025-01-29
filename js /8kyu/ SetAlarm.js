@@ -8,3 +8,5 @@ function setAlarm(employed, vacation){
         return false;
     }
 }
+
+console.log(setAlarm(true, true)); // should return false
