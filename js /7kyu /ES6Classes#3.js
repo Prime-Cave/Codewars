@@ -13,8 +13,27 @@
 // Hint: Make a call to super, passing in the correct arguments, to make life easier ;)
 
 class Cuboid {
-    // TODO: Program Me
+  constructor(length, width, height) {
+    this.length = length;
+    this.width = width; 
+    this.height = height;
   }
-  class Cube extends Cuboid {
-    // Don't forget to make a call to super ;)
+
+  get surfaceArea(){
+    return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
+  };
+
+  get volume(){
+    return this.length * this.width * this.height
   }
+}
+class Cube extends Cuboid {
+  constructor(length){
+    super(length, length, length)
+    
+  }
+}
+
+let newObject = new Cuboid(2,3,4)
+console.log(newObject.surfaceArea)
+console.log(newObject.volume)
