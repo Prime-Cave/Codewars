@@ -9,5 +9,16 @@
 // XO("zzoo") => false
 
 function XO(str) {
-    //code here
+  const lower = str.toLowerCase();
+  let xCount = 0;
+  let oCount = 0;
+
+  for (let char of lower) {
+    if (char === 'x') xCount++;
+    if (char === 'o') oCount++;
+  }
+
+  return xCount === oCount;
 }
+
+console.log(XO("xo"))
