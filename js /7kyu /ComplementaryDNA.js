@@ -17,8 +17,16 @@ function dnaStrand(dna){
   let output = ""
   for(const char of dna){
     if (char == "A") {
-      output.concat("T")
+      output += "T"
+    } else if (char == "T"){
+        output += "A"
+    } else if (char == "G"){
+        output += "C"
+    } else if (char == "C"){
+        output += "G"
     }
   }
   return output
 }
+
+console.log(dnaStrand("AAAA"))
