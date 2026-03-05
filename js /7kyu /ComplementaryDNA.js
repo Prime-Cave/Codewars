@@ -30,3 +30,11 @@ function dnaStrand(dna){
 }
 
 console.log(dnaStrand("AAAA"))
+
+// What i could have done better 
+
+const complement ={ A: "T", T:"A", G:"C", C:"G"}
+
+for (const char of complement){
+    output += complement[char]
+}
